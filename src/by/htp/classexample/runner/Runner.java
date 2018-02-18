@@ -18,9 +18,11 @@ public class Runner {
 		Author auth3 = new Author("Nick", "Perumov", date1);
 		Author auth4 = new Author("Sim", "Yohka", date1);
 
-		Book bk1 = new Book("Th", 2006);
-		Book bk2 = new Book("Th 2.0", 2007);
-		Book bk3 = new Book("Th: the return of TRX", 2009);
+		Book bk1 = new Book("Th", 2009);
+		Book bk2 = new Book("Th 2.0", 2006);
+		Book bk3 = new Book("Th: the return of TRX", 2007);
+		Book bk4 = new Book("Th 2.0", 2006);
+		Book bk5 = new Book("Th 2.0", 2006);
 
 		Author[] authors = new Author[] { auth1, auth2, auth3 };
 		bk1.setAuthor(authors);
@@ -30,7 +32,12 @@ public class Runner {
 		lb.addBook(bk1);
 		lb.addBook(bk2);
 		lb.addBook(bk3);
+		lb.addBook(bk4);
+		lb.addBook(bk5);
 		lb.bookCountInfo();
+		lb.booksInfo();
+		System.out.println("_____");
+		lb.sortBooksByYear();
 		lb.booksInfo();
 
 	}
